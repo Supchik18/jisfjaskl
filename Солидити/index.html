@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Marketplace</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-primary">Real Estate Marketplace</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="text-secondary">Register</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="public-key">Public Key</label>
+                        <input type="text" id="public-key" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control">
+                    </div>
+                    <button id="register-btn" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-secondary">Create Property</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="number" id="price" class="form-control">
+                    </div>
+                    <button id="create-property-btn" class="btn btn-primary">Create Property</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-secondary">Create Announcement</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="property-id">Property ID</label>
+                        <input type="number" id="property-id" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="announcement-price">Price</label>
+                        <input type="number" id="announcement-price" class="form-control">
+                    </div>
+                    <button id="create-announcement-btn" class="btn btn-primary">Create Announcement</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="text-secondary">Purchase Property</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="announcement-id">Announcement ID</label>
+                        <input type="number" id="announcement-id" class="form-control">
+                    </div>
+                    <button id="purchase-property-btn" class="btn btn-primary">Purchase Property</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <h2 class="text-secondary">Withdraw Funds</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" class="form-control">
+                    </div>
+                    <button id="withdraw-funds-btn" class="btn btn-primary">Withdraw Funds</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-secondary">Properties</h2>
+                <ul id="properties-list" class="list-group">
+             
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-secondary">Announcements</h2>
+                <ul id="announcements-list" class="list-group">
+                 
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-secondary">User Balance</h2>
+                <p id="user-balance-text" class="text-success"></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
